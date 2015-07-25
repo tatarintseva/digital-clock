@@ -45,23 +45,24 @@ body{
 	border-top-right-radius:10px;
 }
 
-.line2{
-	/*content:'';*/
-	margin-top:-20px;
+.line::before{
+	content:'';
+	display:block;
+	position:relative;
+	top:10px;
 	height:0px;
 	width: 180px;
-	/*background-color:green;*/
 	border:10px solid red;
 	border-left-color:white;
 	border-right-color:white;
 }
 
-.line2::after{
+.line::after{
 	content:'';
 	display:block;
 	position: relative;
 	left:-10px;
-	width:200px;
+	width:220px;
 	height:10px;
 	background-color:white;
 	
