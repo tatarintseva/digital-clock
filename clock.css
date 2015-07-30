@@ -2,6 +2,11 @@ body{
 	background:100% white; 
 }
 
+@font-face {
+            font-family: 'DS-DIGIB';
+            src: url(DS-DIGIB.TTF);
+        }
+
 .blocks{
 	display:inline-table;
 	width:100%;
@@ -25,6 +30,7 @@ body{
 	width:20%;
 	background: white;
 	font-size: 100px;
+	font-family: 'DS-DIGIB';
 }
 
 
