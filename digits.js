@@ -59,7 +59,8 @@ else if ((today.getMinutes() >= 30) && (today.getMinutes() < 40)){
 else if ((today.getMinutes() >= 40) && (today.getMinutes() < 50)){
     document.getElementById('minute-2').innerHTML = today.getMinutes() - 40;
 }
-else if ((today.getMinutes() >= 40) && (today.getMinutes() < 50)){
+else if ((today.getMinutes() >= 50)){
     document.getElementById('minute-2').innerHTML = today.getMinutes() - 50;
 }
+
 console.log(today);
