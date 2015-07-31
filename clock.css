@@ -31,13 +31,46 @@ body{
 	background: white;
 	font-size: 100px;
 	font-family: 'DS-DIGIB';
+	font-size: 20em;
 }
 
+
+
+/*Adding animation of 2 dots*/
+
+@keyframes colon-disappear {
+    0% {
+        background-color:transparent;
+    }
+    100% {
+        background-color:red;
+    }
+}
 
 .clock.semicolumn{
 	width:5%;
 }
 
+.colon{
+	animation-name:colon-disappear;
+	animation-iteration-count:infinite;
+	animation-duration:1s;
+	position:relative;
+	text-align:center;
+	/*top:30px;*/
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color: red;
+	-webkit-filter: drop-shadow(0px 60px red);
+	filter:drop-shadow(0px 60px red);
+	margin:auto;
+}
+
+
+
+/*The code below is needed if the digits are going to be created 
+with separate lines, and not with using the special font as they are now*/
 .line{
 	position:absolute;
 	height:10px;
@@ -105,14 +138,3 @@ body{
 	border-top:0px;
 }
 
-.colon{
-	position:relative;
-	text-align:center;
-	top:30px;
-	width:40px;
-	height:40px;
-	border-radius:50%;
-	background-color: red;
-	box-shadow:0px 60px red;
-	margin:auto;
-}
