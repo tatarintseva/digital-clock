@@ -1,16 +1,10 @@
-var dots = document.querySelector('.clock.semicolumn div');
-dots.classList.add('colon');
+var d = new Date();
 
-var digits = document.querySelectorAll('.h-m');
-var today = new Date();
+hours = d.getHours().toString().split('');
+minutes = d.getMinutes().toString().split('');
 
-function two_digits(d){
-    var a = d.toString();
-    return [a[0], a[1]];
-}
+document.getElementById('hour-1').innerHTML = hours[0];
+document.getElementById('hour-2').innerHTML = hours[1];
 
-document.getElementById('hour-1').innerHTML = two_digits(today.getHours())[0];
-document.getElementById('hour-2').innerHTML = two_digits(today.getHours())[1];
-
-document.getElementById('minute-1').innerHTML = two_digits(today.getMinutes())[0];
-document.getElementById('minute-2').innerHTML = two_digits(today.getMinutes())[1];
+document.getElementById('minute-1').innerHTML = minutes[0];
+document.getElementById('minute-2').innerHTML = minutes[1];
