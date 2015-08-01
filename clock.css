@@ -35,6 +35,9 @@ body{
 }
 
 
+.clock.semicolumn{
+	width:5%;
+}
 
 /*Adding animation of 2 dots*/
 
@@ -47,17 +50,12 @@ body{
     }
 }
 
-.clock.semicolumn{
-	width:5%;
-}
-
 .colon{
 	animation-name:colon-disappear;
 	animation-iteration-count:infinite;
 	animation-duration:1s;
 	position:relative;
 	text-align:center;
-	/*top:30px;*/
 	width:40px;
 	height:40px;
 	border-radius:50%;
@@ -66,75 +64,3 @@ body{
 	filter:drop-shadow(0px 60px red);
 	margin:auto;
 }
-
-
-
-/*The code below is needed if the digits are going to be created 
-with separate lines, and not with using the special font as they are now*/
-.line{
-	position:absolute;
-	height:10px;
-	width: 200px;
-	background-color:red;
-	border-color: green;
-	border-width: 5px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-}
-
-.line::before{
-	content:'';
-	display:block;
-	position:relative;
-	top:10px;
-	height:0px;
-	width: 180px;
-	border:10px solid red;
-	border-left-color:white;
-	border-right-color:white;
-}
-
-.line::after{
-	content:'';
-	display:block;
-	position: relative;
-	left:0px;
-	width:200px;
-	height:10px;
-	background-color:white;
-	
-}
-
-.middle-line{
-	position:absolute;
-	height:0px;
-	width:200px;
-	background-color:red;
-	position:relative;
-	top:10px;
-}
-
-.middle-line::before{
-	content:'';
-	display:block;
-	position: relative;
-	height:0px;
-	background-color: red;
-	border:10px solid red;
-	border-left-color:white;
-	border-right-color:white;
-	border-bottom:0px;
-}
-
-.middle-line::after{
-	content:'';
-	display:block;
-	position: relative;
-	top:-20px;
-	height:0px;
-	border:10px solid red;
-	border-left-color:white;
-	border-right-color:white;
-	border-top:0px;
-}
-
