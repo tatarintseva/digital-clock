@@ -54,3 +54,13 @@ body{
 	animation-duration:1s;
 }
 
+.country {
+	list-style-type: none;
+	text-align: center;
+}
+
+.country .flag {
+	display:inline;
+	margin:0 2em;
+}
+
