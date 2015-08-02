@@ -9,34 +9,35 @@ body{
 
 .blocks{
 	display:inline-table;
+	border-spacing: 10px;
 	width:100%;
-	border:green solid;
-	height:1000px;
+	height:100%;
 	text-align: center;
-	
 }
 
 .blocks ul{
 	display:table-row;
-	height:100%;
 }
 
 .clock{
 	display:table-cell;
-	border:solid red;
+	position:relative;
 }
 
 .clock.h-m{
 	width:20%;
 	background: white;
-	font-size: 100px;
 	font-family: 'DS-DIGIB';
 	font-size: 20em;
+	background-color:grey;
 }
 
 
 .clock.semicolumn{
 	width:5%;
+	padding-top: 7em;
+	padding-right:3em;
+	padding-left:1em;
 }
 
 /*Adding animation of 2 dots*/
@@ -46,7 +47,7 @@ body{
         background-color:transparent;
     }
     100% {
-        background-color:red;
+        background-color:black;
     }
 }
 
@@ -54,13 +55,14 @@ body{
 	animation-name:colon-disappear;
 	animation-iteration-count:infinite;
 	animation-duration:1s;
-	position:relative;
-	text-align:center;
+	
+	position:absolute;
+	display:inline;
 	width:40px;
 	height:40px;
 	border-radius:50%;
-	background-color: red;
-	-webkit-filter: drop-shadow(0px 60px red);
-	filter:drop-shadow(0px 60px red);
-	margin:auto;
+	background-color: black;
+	-webkit-filter: drop-shadow(0px 60px black);
+	filter:drop-shadow(0px 60px black);
 }
+
