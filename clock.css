@@ -35,9 +35,7 @@ body{
 
 .clock.semicolumn{
 	width:5%;
-	padding-top: 7em;
-	padding-right:3em;
-	padding-left:1em;
+	padding:7em 3em 0em 1em;
 }
 
 /*Adding animation of 2 dots*/
