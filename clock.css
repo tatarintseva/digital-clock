@@ -22,30 +22,29 @@ body{
 .clock{
 	display:table-cell;
 	position:relative;
+	font-size: 20em;
+	font-family: 'DS-DIGIB';
 }
 
 .clock.h-m{
 	width:20%;
 	background: white;
-	font-family: 'DS-DIGIB';
-	font-size: 20em;
 	background-color:grey;
 }
 
 
 .clock.semicolumn{
 	width:5%;
-	padding:7em 3em 0em 1em;
 }
 
-/*Adding animation of 2 dots*/
+/*Adding animation of colon*/
 
 @keyframes colon-disappear {
     0% {
-        background-color:transparent;
+        color:transparent;
     }
     100% {
-        background-color:black;
+        color:black;
     }
 }
 
@@ -53,14 +52,5 @@ body{
 	animation-name:colon-disappear;
 	animation-iteration-count:infinite;
 	animation-duration:1s;
-	
-	position:absolute;
-	display:inline;
-	width:40px;
-	height:40px;
-	border-radius:50%;
-	background-color: black;
-	-webkit-filter: drop-shadow(0px 60px black);
-	filter:drop-shadow(0px 60px black);
 }
 
