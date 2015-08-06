@@ -54,13 +54,27 @@ body{
 	animation-duration:1s;
 }
 
-.country {
-	list-style-type: none;
+.country{
+	display:block;
+	position: relative;
 	text-align: center;
 }
-
-.country .flag {
-	display:inline;
-	margin:0 2em;
+.country .country-selector{
+	display:inline-block;
+	margin:0em 2em 2em;
 }
+
+.country input[type="radio"]{
+	display:none;
+}
+
+.country input[type="radio"] ~ label{
+	color:black;
+	cursor:pointer;
+}
+
+.country input[type="radio"]:checked ~ label{
+	color:red;
+}
+
 

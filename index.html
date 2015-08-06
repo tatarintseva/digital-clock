@@ -8,13 +8,21 @@
 
     </head>
     <header>
-        <nav>
-            <ul class="country"> Select the country:
-                <li class="flag flag-ua">Ukraine</li>
-                <li class="flag flag-gb">Great Britain</li>
-                <li class="flag flag-fr">France</li>
-            </ul>
-        </nav>
+        <form class="country">
+            <h1> Select the country: </h1>
+            <div class="country-selector">
+                <input type="radio" name="country-name" id="Ukr" checked>
+                <label for="Ukr">Ukraine</label>
+            </div>    
+            <div class="country-selector">
+                <input type="radio" name="country-name" id="Fr">
+                <label for="Fr">France</label>
+            </div>
+            <div class="country-selector">
+                <input type="radio" name="country-name" id="Gb">
+                <label for="Gb">Great Britain</label>  
+            </div>
+        </form>
     </header>
     <body>
         <main class="blocks">
