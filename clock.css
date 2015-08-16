@@ -67,6 +67,15 @@ input[type="number"]{
 	width:10em;
 }
 
-input[type="submit"]{
+input[type="button"]{
 	display:block;
+}
+
+.alarm-circle{
+	display:none;
+	float:right;
+	width:100px;
+	height:100px;
+	background-color: red;
+	border-radius: 50%;
 }
