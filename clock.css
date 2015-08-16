@@ -54,3 +54,19 @@ body{
 	animation-duration:1s;
 }
 
+.alarm{
+	font:2em Arial;
+	line-height: 1.5em;
+}
+
+.alarm label{
+	font-size: 0.5em;
+}
+
+input[type="number"]{
+	width:10em;
+}
+
+input[type="submit"]{
+	display:block;
+}

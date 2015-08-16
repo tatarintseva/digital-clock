@@ -9,7 +9,8 @@
     </head>
 
     <body>
-        <article class="blocks">
+      <!-- Clock -->
+        <section class="blocks">
             <ul>
                 <li class="clock h-m" id="hour-1">
                     <div></div>
@@ -27,7 +28,24 @@
                     <div></div>
                 </li>
             </ul>
-        </article>
+        </section>
+
+      <!-- Alarm -->
+      <form class="alarm">
+        <p>
+          Enable alarm below
+        </p>
+
+        <label for="alarm-hour">Hour</label>
+        <input type="number" id="alarm-hour" value='0' min='0' max='23' pattern='[0-23]' placeholder="Number in range 0-23">
+        
+        <label for="alarm-minute">Minute</label>
+        <input type="number" id="alarm-minute" value='0' min='0' max='59' placeholder="Number in range 0-59">
+
+        <input class="button" type="submit" value="Enable alarm">
+
+      </form>
+
         <script type="text/javascript" src="digits.js"></script>
     </body>
 </html>
